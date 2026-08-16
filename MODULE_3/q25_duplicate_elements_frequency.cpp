@@ -28,7 +28,7 @@ int main(){
                 count++;
             }
         }
-           
+    // We can also use for(j = i + 1; j < 8; j++) and if(count > 0) 
         if(count>1){
             
             cout << arr[i] << " ";
