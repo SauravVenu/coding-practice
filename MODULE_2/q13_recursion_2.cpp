@@ -17,5 +17,4 @@ int main(){
     cout << " Sum is " << ans;
     return 0;
 
-
 }
