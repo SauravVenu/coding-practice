@@ -12,11 +12,11 @@ int main(){
     int largest = arr[0];
     int secondLargest = arr[0];
 
-    for(int i=1;i<6;i++){
+    for(int i=1;i<6;i++){    // if an element greater than the current element appears the if block will gets executed
        if(arr[i]>largest){
-        secondLargest = largest;
+        secondLargest = largest;  
         largest = arr[i];
-       }else if(arr[i]>secondLargest){
+       }else if(arr[i]>secondLargest){  //if an element in between the largest and second largest appears the else block will gets executed
         secondLargest = arr[i];
        }
     }
