@@ -14,11 +14,13 @@ int main(){
      }
      cout << endl;
 
-    int temp = arr[0];
-    for(i = 0;i < 5;i++){
+    int temp = arr[0];      // first store the first element of the array in a temp variable
+
+    for(i = 0;i < 5;i++){   // move the rest of the elements in the array towards left    
         arr[i]=arr[i+1];
     }
-    arr[5]=temp;
+
+    arr[5]=temp;            //place the temp variable into the last position of the array
     
     cout << "After left rotation the array will become : ";
     for(int i=0 ;i<6;i++){
