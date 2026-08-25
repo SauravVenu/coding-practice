@@ -7,12 +7,10 @@ int main(){
     cout << " enter the word : ";
     cin >> word;
 
-    bool isPalindrome = false;
+    bool isPalindrome = true;
 
     for(int i = 0; i < word.length()/2;i++){
-        if(word[i]==word[word.length()-1-i]){
-            isPalindrome = true;
-        }else{
+        if(word[i]!=word[word.length()-1-i]){
             isPalindrome = false;
             break;
         }
