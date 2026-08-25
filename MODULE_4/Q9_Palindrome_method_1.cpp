@@ -15,6 +15,8 @@ int main(){
         if(word[left]==word[right]){
             left++;
             right--;
+        }else{
+            break;
         }
         
     }
