@@ -19,7 +19,7 @@ int main(){
     for(int i=0;i<substring.length();i++){
         substring[i]=tolower(substring[i]);
     }
-        int index = word.find(substring);
+        int index = word.find(substring);//to find the substring in a string we use find()
 
     if(index!=-1){
         cout <<"Sub string found at index "<<index;
