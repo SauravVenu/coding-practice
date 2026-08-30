@@ -1,16 +1,14 @@
 #include<iostream>
 using namespace std;
 
-void swapValues(int* p1,int* p2){
-    int temp=*p1;
-    *p1=*p2;
-    *p2=temp;
-    cout << "after swapping : "<<*p1 <<" "<<*p2;
+void swapValues(int* a,int* b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+    cout << "after swapping : "<<*a <<" "<<*b;
 }
 
 int main(){
-    
-
     int a = 10;
     int b = 20;
 
