@@ -27,8 +27,8 @@ int main(){
     cout << "Student 1 : ";
     s1.display();            // displaying object 1
     
-    cout << endl;
-    
+    cout << endl;            //both will be in new line
+
     cout << "Student 2 : ";  
     s2.display();            //displaying object 2
 
