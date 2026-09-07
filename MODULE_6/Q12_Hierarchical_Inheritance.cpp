@@ -8,34 +8,34 @@ class Employee {       //Hierarchial Inheritance
     }
 };
 
-class Manager : public Employee {
+class Manager : public Employee {  //Manager inherits employee class
     public:
     string department;
     void manages(){
         cout << name << " " << department << endl;
     }
 
-Manager(string name ,string department){
+Manager(string name ,string department){  // constructor for manager object
     this->name= name;
     this->department = department;
 }
-~Manager(){
+~Manager(){    // destructor for manager object
     cout << "My department is "<< department << endl;
 }
 };
 
-class Developer : public Employee {
+class Developer : public Employee {    // developer class inherits employee class
     public:
     string language;
     void code(){
         cout << name << " "<< language << endl;
     }
 
-Developer(string name ,string language){
+Developer(string name ,string language){  // constructor for developer object
     this->name = name;
     this->language = language;
 }
-~Developer(){
+~Developer(){      //destructor for developer object
     cout << "C++ developer" << endl;
 }
 };
@@ -50,11 +50,11 @@ int main(){
     getline(cin,department);
 
     cout << "language : ";
-    cin >> language;
+    getline(cin,language);
 
     
-    Manager m1(name,department);
-    Developer d1(name,language);
+    Manager m1(name,department);    // manager objects gets created
+    Developer d1(name,language);    // developer object gets created
 
     m1.displayName();
     d1.displayName();
