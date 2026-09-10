@@ -17,6 +17,6 @@ int main(){
     BankAccount b3;
     BankAccount b4;
 
-    cout << "The number of accounnts created is : " << count << endl;
+    cout << "The number of accounnts created is : " << BankAccount::count << endl;
     return 0;
 }
