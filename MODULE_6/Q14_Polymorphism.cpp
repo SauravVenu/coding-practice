@@ -7,7 +7,7 @@ class Animal {
         cout <<"depends on the animal"<< endl;
     }
 };
-class Dog {
+class Dog : public Animal {
     public:
     void sound(){
         cout <<"bark"<< endl;
