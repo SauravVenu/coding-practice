@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int amount;
 
 class BankAccount {
     private :
     int balance = 2000;
 
     public :
+    int amount;
 
     void deposit(){
         balance = amount + balance;
@@ -24,11 +24,12 @@ class BankAccount {
     }
     
     BankAccount(int amount){
-        amount = amount;
+        this->amount = amount;
     }
 };
 
 int main(){
+    int amount;
     
     cout << "enter the amount ";
     cin >> amount;
