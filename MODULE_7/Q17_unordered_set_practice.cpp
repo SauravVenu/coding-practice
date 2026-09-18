@@ -37,14 +37,15 @@ int main(){
     }
     cout << endl;
 
-    us.erase(120);    // it will removes an element , here it is 120
+    us.erase(105);    // it will removes an element , here it is 120
     
     cout << "updated set : ";
     for(int x : us){
         cout << x << " ";
     }
+    cout << endl;
 
-    us.clear();   // clear() will clear all the functions in the set
+    us.clear();   // clear() will clear all the elements from the set
 
     if(us.empty()){    // empty() will check wheather the set is empty or not
         cout << "empty";
