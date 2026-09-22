@@ -33,5 +33,73 @@ int main(){
     cout << endl;
 
     cout << inventory.size();   // displaying the size of the inventory
+
+    return 0;
 }
+
+
+/*
+========================================================
+                    MAP — SUMMARY
+========================================================
+
+- map stores data in KEY → VALUE form.
+
+Syntax:
+    map<int, string> mp;
+
+- Keys must be UNIQUE.
+- Values can be DUPLICATE.
+- Keys are automatically stored in SORTED ORDER.
+- map does NOT support index-based access.
+- Access elements using their KEY.
+
+Example:
+    map<int, string> student;
+
+    student[101] = "CSE";
+    student[102] = "AIML";
+
+Here:
+    101 → CSE
+    102 → AIML
+
+- If an existing key is used, its value is UPDATED.
+
+    student[101] = "ECE";
+
+- If a new key is used, a new key-value pair is CREATED.
+
+Important functions:
+
+    mp.size()        → returns number of elements
+    mp.empty()       → checks whether map is empty
+    mp.find(key)     → searches for a key
+    mp.count(key)    → returns 1 if key exists, otherwise 0
+    mp.erase(key)    → removes the key-value pair
+    mp.clear()       → removes all elements
+
+Traversal:
+
+    for(auto x : mp)
+    {
+        cout << x.first << " " << x.second << endl;
+    }
+
+    x.first  → KEY
+    x.second → VALUE
+
+Important:
+- map stores keys in sorted order.
+- Duplicate keys are NOT allowed.
+- Duplicate values ARE allowed.
+- map uses key-based access, not index-based access.
+
+Time Complexity:
+    Search   → O(log n)
+    Insert   → O(log n)
+    Erase    → O(log n)
+
+========================================================
+*/
 
