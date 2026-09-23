@@ -12,7 +12,7 @@ int main(){
         v.push_back(num);   //  elements are added at the end of the vector
     }
     cout << endl;
-    cout << "origiinal vector : ";     
+    cout << "original vector : ";     
     for(int i=0; i <v.size();i++){    // displaying the original vector , we can either use for loop or range based for loop for dispalying the elemnents , since vector allows indexing
         cout << v[i] << " ";
     }
